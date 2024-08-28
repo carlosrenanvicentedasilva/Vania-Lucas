@@ -7,31 +7,41 @@ import Foto03 from './unhas/03.jpg';
 
 const UnhaCards = () => {
   const settings = {
-    dots: true, // Adiciona os pontos de navegação
-    infinite: true, // Faz o slider ser infinito
+    dots: true,
+    infinite: true,
     speed: 1000,
-    slidesToShow: 1, // Mostra apenas um card por vez
-    slidesToScroll: 1, // Rola um slide por vez
-    centerMode: true, // O card atual é centralizado
-    variableWidth: true, // Permite cards de diferentes larguras
+    slidesToShow: 3, // Default: Show two slides
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 768, // For devices with screen width less than 768px
+        settings: {
+          slidesToShow: 1, // Show one slide
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   const cardStyle = {
-    height: '300px', // Defina a altura do card
-    width: '330px', // Defina a largura do card
+    height: '300px',
+    width: '310px',
     overflow: 'hidden',
-    borderRadius: '15px', // Bordas arredondadas
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Sombra ao redor do card
+    borderRadius: '15px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
+    margin: '0 auto' // Center the cards horizontally
   };
 
   const imgStyle = {
-    height: '400px', // 60% do card para a imagem
+    height: '300px',
     width: '300px',
-    objectFit: 'cover', // A imagem cobre o card
+    objectFit: 'cover',
     borderTopLeftRadius: '15px',
     borderTopRightRadius: '15px',
   };
@@ -60,46 +70,42 @@ const UnhaCards = () => {
   };
 
   return (
-    <div className="container-fluid px-4 py-5" id="custom-cards">
+    <div className="container px-4 py-5" id="custom-cards">
       <h1 className="display-5 fw-bold text-black text-center mb-5">Unhas</h1>
 
       <Slider {...settings}>
         <div style={cardStyle}>
-          <img src={Foto01} alt="Depilação Axilas" style={imgStyle} />
+          <img src={Foto01} alt="Unha Modelo 1" style={imgStyle} />
           <div style={contentStyle}>
-            <h3 style={titleStyle}>Unha modelo</h3>
-            <p style={descriptionStyle}>Remoção completa dos pelos das axilas.</p>
+            <h3 style={titleStyle}>Unha Modelo 1</h3>
+            <p style={descriptionStyle}>Descrição do serviço de unhas modelo 1.</p>
             <p style={priceStyle}>R$ 20,00</p>
           </div>
         </div>
 
         <div style={cardStyle}>
-          <img src={Foto02} alt="Depilação Coxa" style={imgStyle} />
+          <img src={Foto02} alt="Unha Modelo 2" style={imgStyle} />
           <div style={contentStyle}>
-            <h3 style={titleStyle}>Unha modelo</h3>
-            <p style={descriptionStyle}>Remoção dos pelos das coxas.</p>
+            <h3 style={titleStyle}>Unha Modelo 2</h3>
+            <p style={descriptionStyle}>Descrição do serviço de unhas modelo 2.</p>
             <p style={priceStyle}>R$ 20,00</p>
           </div>
         </div>
 
         <div style={cardStyle}>
-          <img src={Foto03} alt="Depilação Meia Perna" style={imgStyle} />
+          <img src={Foto03} alt="Unha Modelo 3" style={imgStyle} />
           <div style={contentStyle}>
-            <h3 style={titleStyle}>Unha modelo</h3>
-            <p style={descriptionStyle}>Remoção dos pelos da meia perna.</p>
+            <h3 style={titleStyle}>Unha Modelo 3</h3>
+            <p style={descriptionStyle}>Descrição do serviço de unhas modelo 3.</p>
             <p style={priceStyle}>R$ 20,00</p>
           </div>
         </div>
-
       </Slider>
 
       <div className='container mt-5'>
           <div className='row'>
               <div className='col-12'>
-                <h1 className='display-6 fw-bold text-black text-center'>Atendemos depilação a domicilio</h1>
-              </div>
-              <div className='col-12'>
-                <h5 className='text-center mt-5'>Agende sua depilação via whatzap e desfrute do conforto de sua casa.</h5>
+                <h1 className='display-6 fw-bold text-black text-center'>Estamos nos preparando para atender a domicílio</h1>
               </div>
           </div>
       </div>

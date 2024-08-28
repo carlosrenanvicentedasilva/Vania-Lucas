@@ -8,31 +8,41 @@ import Foto04 from './depilação/DepilaçãoInquinal.png';
 
 const DepilacaoCards = () => {
   const settings = {
-    dots: true, // Adiciona os pontos de navegação
-    infinite: true, // Faz o slider ser infinito
+    dots: true,
+    infinite: true,
     speed: 1000,
-    slidesToShow: 1, // Mostra apenas um card por vez
-    slidesToScroll: 1, // Rola um slide por vez
-    centerMode: true, // O card atual é centralizado
-    variableWidth: true, // Permite cards de diferentes larguras
+    slidesToShow: 3, // Default: Show two slides
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 768, // For devices with screen width less than 768px
+        settings: {
+          slidesToShow: 1, // Show one slide
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
   const cardStyle = {
-    height: '300px', // Defina a altura do card
-    width: '310px', // Defina a largura do card
+    height: '300px',
+    width: '310px',
     overflow: 'hidden',
-    borderRadius: '15px', // Bordas arredondadas
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Sombra ao redor do card
+    borderRadius: '15px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     textAlign: 'center',
+    margin: '0 auto' // Center the cards horizontally
   };
 
   const imgStyle = {
-    height: '300px', // 60% do card para a imagem
+    height: '300px',
     width: '300px',
-    objectFit: 'cover', // A imagem cobre o card
+    objectFit: 'cover',
     borderTopLeftRadius: '15px',
     borderTopRightRadius: '15px',
   };
@@ -61,7 +71,7 @@ const DepilacaoCards = () => {
   };
 
   return (
-    <div className="container-fluid px-4 py-5" id="custom-cards">
+    <div className="container px-4 py-5" id="custom-cards">
       <h1 className="display-5 fw-bold text-black text-center mb-5">Depilação</h1>
 
       <Slider {...settings}>
@@ -93,7 +103,7 @@ const DepilacaoCards = () => {
         </div>
 
         <div style={cardStyle}>
-          <img src={Foto04} alt="Depilação Meia Perna" style={imgStyle} />
+          <img src={Foto04} alt="Depilação Inguinal" style={imgStyle} />
           <div style={contentStyle}>
             <h3 style={titleStyle}>Depilação Inguinal</h3>
             <p style={descriptionStyle}>Remoção dos pelos da partes intimas.</p>

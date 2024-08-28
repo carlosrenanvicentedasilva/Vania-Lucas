@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CustomNavbar from './CustomNavbar';
-import Carousel from './Carousel';
+import Carousel from './Home';
 import DepilaçãoCards from './DepilaçãoCards';
 import CustomCards from './UnhaCards';
 
