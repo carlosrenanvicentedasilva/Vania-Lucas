@@ -10,7 +10,7 @@ const DepilacaoCards = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 3, // Default: Show two slides
     slidesToScroll: 1,
     centerMode: false,
@@ -71,7 +71,7 @@ const DepilacaoCards = () => {
   };
 
   return (
-    <div className="container px-4 py-5" id="custom-cards">
+    <div className="container" id="custom-cards">
       <h1 className="display-5 fw-bold text-black text-center mb-5">Depilação</h1>
 
       <Slider {...settings}>
@@ -115,10 +115,10 @@ const DepilacaoCards = () => {
       <div className='container mt-5'>
           <div className='row'>
               <div className='col-12'>
-                <h3 className='fw-bold text-black text-center'>Atendemos depilação a domicilio</h3>
+                <h3 className='fw-bold text-white text-center'>Atendemos depilação a domicilio</h3>
               </div>
               <div className='col-12'>
-                <h5 className='text-center mt-2'>Agende sua depilação via whatzap e desfrute do conforto de sua casa.</h5>
+                <h5 className='text-white text-center mt-2'>Agende sua depilação via whatzap e desfrute do conforto de sua casa.</h5>
               </div>
           </div>
       </div>

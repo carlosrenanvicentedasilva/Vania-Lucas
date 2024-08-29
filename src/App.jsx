@@ -5,7 +5,9 @@ import Carousel from './Home';
 import DepilaçãoCards from './DepilaçãoCards';
 import CustomCards from './UnhaCards';
 
-import './App.css';
+import Footer from './Footer';
+
+import './App.css'; // Certifique-se de que o CSS para o divisor esteja incluído aqui
 
 const Home = () => {
 
@@ -13,36 +15,36 @@ const Home = () => {
       <div>
         <CustomNavbar />
 
-      <div id="home" className='home'>
-        <Carousel />
+        <div id="home" className='home'>
+          <Carousel />
+        </div>
+
+        <div id="serviços" className='serviços'>
+          <DepilaçãoCards />
+        </div>
+
+        <div className="divider"></div> {/* Substituindo <hr /> */}
+
+        <div id="serviços" className='serviços'>
+          <CustomCards />
+        </div>
+
+        <div className="divider"></div> {/* Substituindo <hr /> */}
+
+        <div id="onde">
+          <h1>Onde atuamos</h1>
+        </div>
+
+        <div className="divider"></div> {/* Substituindo <hr /> */}
+
+        <div id="contatos">
+          <h1>Contato</h1>
+        </div>
+
+        <div className="divider"></div> {/* Substituindo <hr /> */}
+
+        <Footer />
       </div>
-
-      <div id="serviços" className='serviços'>
-      <DepilaçãoCards />
-      </div>
-
-      <hr />
-
-      <div id="serviços" className='serviços'>
-      <CustomCards />
-      </div>
-
-      <hr />
-
-      <div id="onde">
-      <h1>Onde atuamos</h1>
-      </div>
-
-      <hr />
-
-      <div id="contatos">
-      <h1>Contato</h1>
-      </div>
-
-      <hr />
-
-      <h1>Footer</h1>
-    </div>
   );
 };
 

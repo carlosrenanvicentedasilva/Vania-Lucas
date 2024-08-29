@@ -33,4 +33,21 @@ body {
 
 
 
+.bgcorousel {
+  padding-top: 300px;
+}
 
+.bghome {
+  background-color: rgba(255, 255, 255, 0.800); /* Fundo branco com 55% de opacidade */
+  border: 2px solid #ff69b4; /* Borda rosa */
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.242); /* Opcional: sombra externa */
+}
+
+
+.divider {
+  height: 40px;
+  background: white; /* Cor de fundo do divisor */
+  margin: 0px 0; /* Espaçamento acima e abaixo */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2); /* Sombra interna */
+}

@@ -17,34 +17,32 @@ const CarouselComponent = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <div
-            className="d-flex align-items-center justify-content-end"
+            className="d-flex align-items-center justify-content-end bgcorousel"
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '70vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
-            <div className="container text-end text-dark p-3 p-md-5 position-absolute bottom-0 end-0">
+            <div className="container text-end text-dark bghome">
               <h1 className="display-5 fw-bold text-rosa">Bem vindo ao espaço</h1>
-              <h1 className="display-5 fw-bold text-black">Vanica Lucas.</h1>
+              <h1 className="display-5 fw-bold text-black">Vânia Lucas.</h1>
               <h6 className="text-black">Temos mais de 15 anos de atuação no mercado.</h6>
             </div>
           </div>
         </div>
         <div className="carousel-item">
           <div
-            className="d-flex align-items-center justify-content-end"
+            className="d-flex align-items-center justify-content-end bgcorousel"
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '70vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
-            <div className="container text-end text-white p-3 p-md-5 position-absolute bottom-0 end-0">
+            <div className="container text-end text-dark bghome">
               <h1 className="display-4 fw-bold text-black">Serviços</h1>
               <h6 className="text-black">Nos orgulhamos de ter a mais alta qualidade</h6>
               <h6 className="text-black">e higiene na execução de nossos serviços.</h6>
@@ -53,16 +51,15 @@ const CarouselComponent = () => {
         </div>
         <div className="carousel-item">
           <div
-            className="d-flex align-items-center justify-content-end"
+            className="d-flex align-items-center justify-content-end bgcorousel"
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '70vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
-            <div className="container text-end text-white p-3 p-md-5 position-absolute bottom-0 end-0">
+            <div className="container text-end text-dark bghome">
               <h1 className="display-4 fw-bold text-black">Depilação</h1>
               <h6 className="text-black">Depilação de qualidade e ótimos materiais</h6>
             </div>

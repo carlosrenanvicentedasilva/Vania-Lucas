@@ -9,7 +9,7 @@ const UnhaCards = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 3, // Default: Show two slides
     slidesToScroll: 1,
     centerMode: false,
@@ -70,7 +70,7 @@ const UnhaCards = () => {
   };
 
   return (
-    <div className="container px-4 py-5" id="custom-cards">
+    <div className="container" id="custom-cards">
       <h1 className="display-5 fw-bold text-black text-center mb-5">Unhas</h1>
 
       <Slider {...settings}>
@@ -105,7 +105,7 @@ const UnhaCards = () => {
       <div className='container mt-5'>
           <div className='row'>
               <div className='col-12'>
-                <h1 className='display-6 fw-bold text-black text-center'>Estamos nos preparando para atender a domicílio</h1>
+                <h3 className='fw-bold text-white text-center'>Estamos nos preparando para atender a domicílio</h3>
               </div>
           </div>
       </div>

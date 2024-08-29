@@ -26,7 +26,7 @@ const NavbarOffcanvas = () => {
                 <a className="nav-link" aria-current="page" href="#onde">Onde atuamos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#contato">Contato</a>
+                <a className="nav-link" aria-current="page" href="#contatos">Contato</a>
               </li>
             </ul>
           </div>
