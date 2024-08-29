@@ -21,7 +21,7 @@ const CarouselComponent = () => {
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '90vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
@@ -38,7 +38,7 @@ const CarouselComponent = () => {
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '90vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
@@ -55,7 +55,7 @@ const CarouselComponent = () => {
             style={{
               backgroundImage: `url(${Foto})`,
               backgroundSize: 'cover',
-              height: '100vh', // Ajusta a altura para ser 70% da altura da tela
+              height: '90vh', // Ajusta a altura para ser 70% da altura da tela
               position: 'relative',
             }}
           >
