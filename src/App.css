@@ -8,9 +8,7 @@ body {
   padding: 0;
 }
 
-
-
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>navbar */
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.2); /* Navbar quase transparente */
@@ -30,12 +28,13 @@ body {
   filter: invert(100%); /* Garante que o botão de fechar permaneça visível */
 }
 
-
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>carousel */
 
 .bgcorousel {
   padding-top: 300px;
 }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>home */
 
 .bghome {
   background-color: rgba(255, 255, 255, 0.800); /* Fundo branco com 55% de opacidade */
@@ -44,10 +43,61 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.242); /* Opcional: sombra externa */
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>divider */
 
 .divider {
   height: 40px;
   background: white; /* Cor de fundo do divisor */
   margin: 0px 0; /* Espaçamento acima e abaixo */
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2); /* Sombra interna */
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Contato */
+
+.whatsapp-contact-page {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: flash 1.5s infinite alternate;
+}
+
+.whatsapp-icon {
+  margin-right: 10px;
+}
+
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 10px #25d366;
+  }
+  100% {
+    box-shadow: 0 0 20px #25d366;
+  }
 }

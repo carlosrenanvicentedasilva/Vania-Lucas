@@ -4,6 +4,7 @@ import CustomNavbar from './CustomNavbar';
 import Carousel from './Home';
 import DepilaçãoCards from './DepilaçãoCards';
 import CustomCards from './UnhaCards';
+import Contatos from './contato/Contato';
 
 import Footer from './Footer';
 
@@ -15,33 +16,27 @@ const Home = () => {
       <div>
         <CustomNavbar />
 
-        <div id="home" className='home'>
+        <div id="home">
           <Carousel />
         </div>
 
-        <div id="serviços" className='serviços'>
+        <div id="serviços">
           <DepilaçãoCards />
         </div>
 
-        <div className="divider"></div> {/* Substituindo <hr /> */}
+        <div className="divider"></div>
 
-        <div id="serviços" className='serviços'>
+        <div id="serviços">
           <CustomCards />
         </div>
 
-        <div className="divider"></div> {/* Substituindo <hr /> */}
-
-        <div id="onde">
-          <h1>Onde atuamos</h1>
-        </div>
-
-        <div className="divider"></div> {/* Substituindo <hr /> */}
+        <div className="divider"></div>
 
         <div id="contatos">
-          <h1>Contato</h1>
+        <Contatos />
         </div>
 
-        <div className="divider"></div> {/* Substituindo <hr /> */}
+        <div className="divider"></div>
 
         <Footer />
       </div>
